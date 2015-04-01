@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+	<h1>Calculate!</h1>
+   			<h3>Answer is: </h3>
+   			<h2><%=calculations%></h2>
+
+	<form action="/add" method="post" class="add">
+		<input type="text" name="add1" placeholder="Add numbers here"></input> +
+		<input type="text" name="add2"></input>
+		<button type="submit">Add</button>
+	</form>
+	<form action="/subtract" method="post" class ="subtract">
+		<input type="text" name="sub1" placeholder="Subtract numbers here"></input> -
+		<input type="text" name="sub2"></input>
+		<button type="submit">Subtract</button>
+	</form>
+	<form action="/multiply" method="post" class="multiply">
+		<input type="text" name="mult1" placeholder="Multiply numbers here"></input> *
+		<input type="text" name="mult2"></input>
+		<button type="submit">Multiply</button>
+	</form>
+	<form action="/divide" method="post" class="divide">
+		<input type="text" name="div1" placeholder="Divide numbers here"></input> /
+		<input type="text" name="div2"></input>
+		<button type="submit">Divide</button>
+	</form>
+</body>
+</html>
